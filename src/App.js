@@ -14,11 +14,11 @@ const App = () => {
   const onLeaveFeedback = option => {
     switch (option) {
       case 'good':
-        return setGood(prev => prev + 1);
+        return setGood(good + 1);
       case 'neutral':
-        return setNeutral(prev => prev + 1);
+        return setNeutral(neutral + 1);
       case 'bad':
-        return setBad(prev => prev + 1);
+        return setBad(bad + 1);
       default:
         return;
     }
